@@ -10,7 +10,7 @@
 
 if KillAuraHitCooldown == nil then
 
-    getgenv().KillAuraHitCooldown = 0.2
+    getgenv().KillAuraHitCooldown = 0.75
 
 end
 
@@ -204,7 +204,7 @@ local jumppower = 50
 
 local killsay = false
 
-local killaura = false
+local killaura = true
 
 local hidename = false
 
@@ -222,7 +222,7 @@ local walkspeedenabled = false
 
 local silentaimhitchance = 100 -- in percents
 
-local instantcharge = false
+local instantcharge = true 
 
 local boxesenabled = false
 
@@ -712,7 +712,7 @@ mainSection:Toggle({
 
     Title = "disable jump cooldown",
 
-    Default = false
+    Default = true
 
     },
 
@@ -790,7 +790,7 @@ mainSection:Toggle({
 
     Title = "no fall damage",
 
-    Default = false
+    Default = true 
 
     },
 
@@ -822,7 +822,7 @@ mainSection:Toggle({
 
     Title = "no dash cooldown",
 
-    Default = false
+    Default = true 
 
     },
 
@@ -854,7 +854,7 @@ mainSection:Toggle({
 
     Title = "anti fire + bear trap damage",
 
-    Default = false
+    Default = true
 
     },
 
@@ -1176,7 +1176,7 @@ combatKillauraSection:Toggle({
 
     Title = "kill aura",
 
-    Default = false
+    Default = true
 
     },
 
@@ -1194,7 +1194,7 @@ combatKillauraSection:Toggle({
 
     Title = "hitbox expander",
 
-    Default = false
+    Default = true
 
     },
 
@@ -1246,7 +1246,7 @@ combatKillauraSection:Toggle({
 
     Description = "no parry cooldown",
 
-    Default = false
+    Default = true
 
     },
 
